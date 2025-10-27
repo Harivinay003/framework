@@ -1,0 +1,12 @@
+<configuration>
+<tags>
+	<tag>Account_Number</tag>
+	<tag>Account_Name</tag>
+	<tag>Account_Balance</tag>
+</tags>
+<fields>
+	<field>Account Number</field>
+	<field>Account Name</field>
+	<field>Account Balance</field>
+</fields>
+</configuration>
