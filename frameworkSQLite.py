@@ -108,8 +108,8 @@ class CRUD:
 	def getFieldsFromTable(self, tableName):
 		self.cursor.execute(f"PRAGMA table_info({tableName})")
 		columns = self.cursor.fetchall()
-		values = [column[1] for column in columns]
-		return values
+		fields = [column[1] for column in columns]
+		return fields
 
 	def getMenu(self):
 		fpMenu = open(MENUFILE, "r")
@@ -132,4 +132,5 @@ class CRUD:
 				print("Please enter a valid number.")
 
 Object = CRUD()
+
 Object.showMenu()
